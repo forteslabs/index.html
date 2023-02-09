@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>W3.CSS Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <style>
+            body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                font-family: "Raleway", sans-serif
+            }
+
+            .w3-third img {
+                margin-bottom: -6px;
+                opacity: 0.8;
+                cursor: pointer
+            }
+
+            .w3-third img:hover {
+                opacity: 1
+            }
+        </style>
+    </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>PATRICK<br>FORTES</b></h3>
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">Patrick Fortes</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Photo grid -->
+        <div class="w3-row">
+            <div class="w3-third">
+                <img src="Picture4.gif" style="width:100%" onclick="onClick(this)"
+                    alt="A boy surrounded by beautiful nature">
+                <img src="Picture3.gif" style="width:100%" onclick="onClick(this)"
+                    alt="What a beautiful scenery this sunset">
+                <img src="Picture4.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+            </div>
+
+            <div class="w3-third">
+                <img src="Picture5.gif" style="width:100%" onclick="onClick(this)"
+                    alt="Quiet day at the beach. Cold, but beautiful">
+                <img src="Picture7.gif" style="width:100%" onclick="onClick(this)"
+                    alt="Waiting for the bus in the desert">
+                <img src="Picture8.gif" style="width:100%" onclick="onClick(this)"
+                    alt="Mcdonalds">
+            </div>
+
+            <div class="w3-third">
+                <img src="Picturea.gif" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+                <img src="Pictureb.gif" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+                <img src="Picturec.gif" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="Picture21.jpg" class="w3-bar-item w3-button w3-hover-black">«</a>
+                <a href="Picture22.jpg" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="Picture23.jpg" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="Picture13.gif" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="Picture14.gif" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="Picture15.gif" class="w3-bar-item w3-button w3-hover-black">»</a>
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                <img id="img01" class="w3-image">
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+            <h4><b>About Me</b></h4>
+            <img src="Picture1.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>About me</h4>
+                <p>"Hello, my name is Patrick and I am a highly motivated and versatile individual with a wide range of experiences and skills. Throughout my career, I have demonstrated my ability to adapt to new challenges and environments, as well as my commitment to continuously learning and growing.<br></br>
+
+I have a diverse background, starting with my early experiences in the fast food industry where I honed my customer service skills and learned the importance of teamwork and attention to detail. From there, I moved on to work as an Air conditioning technician where I developed a deep understanding of HVAC systems and honed my technical skills.<br></br>
+
+In addition to my technical abilities, I am also skilled in computer work and have a strong foundation in various computer programs and technologies. This has allowed me to bring a unique perspective to my work and effectively combine my technical and computer skills to produce high-quality results.<br></br>
+
+I am confident that my diverse background, strong work ethic, and commitment to excellence will make me a valuable asset to any organization. I am excited to take on new challenges and bring my skills and experiences to the next level."<br></br>
+                <p>mail: fortes.patrick@outlook.com</p>
+                <p>mobile: 0956-188-2808</p>
+                <hr class="w3-opacity">
+                <h4 class="w3-padding-16">Technical Skills</h4>
+                <p class="w3-wide">Cleaning and maintenance of HVAC systems, including the replacement of filters and other components as needed.</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+                </div>
+                <p class="w3-wide">Customer service skills, including the ability to communicate effectively with clients and explain technical issues in layman's terms.</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+                </div>
+                <p class="w3-wide">Repair and installation of HVAC systems, including both residential and commercial units.</p>
+                <div class="w3-white">
+                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+                </div>
+                <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download
+                        Resume</button></p>
+                <hr class="w3-opacity">
+
+                <h4 class="w3-padding-16">How much I charge</h4>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-black w3-xlarge w3-padding-32">HVAC Services</li>
+                            <li class="w3-padding-16">Troubleshooting and repairing HVAC systems, including central air conditioning and refrigeration systems</li>
+                            <li class="w3-padding-16">Clearing clogged drain lines and performing preventative maintenance on air conditioning units</li>
+                            <li class="w3-padding-16">Implementing routine cleaning schedules to maintain the longevity and efficiency of air conditioning systems.</li>
+                            <li class="w3-padding-16">Mail Support</li>
+                            <li class="w3-padding-16">
+                                <h2>$10 (Negotiable)</h2>
+                                <span class="w3-opacity">per month</span>
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w3-half">
+                        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                            <li class="w3-black w3-xlarge w3-padding-32">Customer Service</li>
+                            <li class="w3-padding-16">Ability to interact with customers in a friendly and professional manner, providing excellent customer experience.</li>
+                            <li class="w3-padding-16">Knowledge of fast food menu items and the ability to prepare them quickly and accurately.</li>
+                            <li class="w3-padding-16">Ability to work well in a fast-paced, team-oriented environment and to effectively communicate with coworkers.</li>
+                            <li class="w3-padding-16">Willingness to work various shifts, including weekends and holidays, to meet the demands of the business.
+
+
+
+
+</li>
+                            <li class="w3-padding-16">
+                                <h2>$ 25 (Negotiable)</h2>
+                                <span class="w3-opacity">per month</span>
+                            </li>
+                            <li class="w3-light-grey w3-padding-24">
+                                <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact section -->
+        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+            <div class="w3-content" style="max-width:600px">
+                <h4 class="w3-center"><b>Contact Me ( fortes.patrick@outlook.com )</b></h4>
+                <p>"From Grilling Burgers to Grinning for Customers, I'm the All-in-One Fast Food Specialist!"</p><p>Or</p>
+<p>"Bringing Cool Solutions to Aircon Problems: Your One-Stop Shop for Air Conditioning Services & Customer Satisfaction!"</p>
+
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input w3-border" type="text" name="Name" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input w3-border" type="text" name="Email" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Message</label>
+                        <input class="w3-input w3-border" type="text" name="Message" required>
+                    </div>
+                    <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-grey">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <h3>INFO</h3>
+                    <p>I am confident that my experience in both industries makes me an ideal candidate for a wide range of roles. I am eager to bring my technical skills and customer-focused approach to a new opportunity and to continue growing my knowledge and expertise."</p>
+                </div>
+
+                <div class="w3-third">
+                    <h3>Socials</h3>
+                    <ul class="w3-ul">
+                        <li class="w3-padding-16 w3-hover-black">
+                            <img src="linkedin.jpg" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">Linkedin</span><br>
+                            <span>fortes.patrick</span>
+                        </li>
+                        <li class="w3-padding-16 w3-hover-black">
+                            <img src="twitter.jpg" class="w3-left w3-margin-right" style="width:50px">
+                            <span class="w3-large">Twitter.com</span><br>
+                            <span>fortes.patrick</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third">
+                    <h3>POPULAR TAGS</h3>
+                    <p>
+                        <span class="w3-tag w3-black w3-margin-bottom">Fast food</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">AC (air conditioning)</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Energy efficiency</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">AC maintenance</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">AC service</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cooling</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Service crew</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fast food</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Burgers</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Pizza</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Food Panda</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Eats</span>
+                        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Customer service</span> <span
+                            class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Jollibee</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="w3-black w3-center w3-padding-24">Made with <a href="https://www.w3schools.com/spaces" title="spaces" target="_blank" class="w3-hover-opacity">ChatGPT and creativity</a></div>
+
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
